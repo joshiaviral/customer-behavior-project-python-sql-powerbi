@@ -79,7 +79,7 @@ WHERE item_rank <= 3;
 SELECT subscription_status,
 COUNT(customer_id) as repeat_buyers
 FROM customer
-WHERE previous_purchases>5
+WHERE previous_purchases>1
 GROUP BY subscription_status;
 
 
